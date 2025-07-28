@@ -32,6 +32,10 @@ export default function registerGetDemographicsTool(server) {
       return {
         content: [{ type: "text", text: JSON.stringify(data) }],
       };
+    },
+    {
+      prompt:
+        "This tool fetches demographics for a given user key. Provide 'userkey' as a string to get demographics information.",
     }
   );
 }

@@ -11,6 +11,10 @@ export default function registerEchoTool(server) {
       return {
         content: [{ type: "text", text: message }],
       };
+    },
+    {
+      prompt:
+        "This tool echoes back the message you provide. Enter any string in the 'message' field to see it returned.",
     }
   );
 }

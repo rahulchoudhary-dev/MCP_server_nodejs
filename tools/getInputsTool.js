@@ -42,6 +42,10 @@ export default function registerGetInputsTool(server) {
       return {
         content: [{ type: "text", text: JSON.stringify(data) }],
       };
+    },
+    {
+      prompt:
+        "This tool fetches input data for a user. Provide all required fields (userkey, inputs, lane, lanes, page, answered) as specified.",
     }
   );
 }

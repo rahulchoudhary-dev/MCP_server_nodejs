@@ -4,7 +4,7 @@ import fetch from "node-fetch";
 export default function registerGetRecommendationTool(server) {
   server.tool(
     "getRecommendation",
-    "Get recommendations for a user key",
+    "Get recommendations for a user key.",
     { usrkey: z.string() },
     async ({ usrkey }) => {
       const url =
@@ -30,6 +30,10 @@ export default function registerGetRecommendationTool(server) {
       return {
         content: [{ type: "text", text: JSON.stringify(data) }],
       };
+    },
+    {
+      prompt:
+        "This tool fetches recommendations for a given user key. Provide 'usrkey' as a string to get recommendations.",
     }
   );
 }

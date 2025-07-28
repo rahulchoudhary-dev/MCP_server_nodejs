@@ -1,6 +1,6 @@
 {
-  "mcpServers": {
-    "Node.js MCP Server": {
+  "servers": {
+    "local-mcp-server": {
       "command": "npm",
       "args": ["start"],
       "stdio": true,

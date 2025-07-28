@@ -13,6 +13,10 @@ export default function registerGreetingTool(server) {
           { type: "text", text: `Hello, ${name}! Welcome to the MCP server.` },
         ],
       };
+    },
+    {
+      prompt:
+        "This tool returns a personalized greeting. Provide a 'name' to receive a custom welcome message.",
     }
   );
 }

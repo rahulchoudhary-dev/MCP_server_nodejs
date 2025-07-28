@@ -40,6 +40,10 @@ export default function registerSetDemographicsTool(server) {
       return {
         content: [{ type: "text", text: JSON.stringify(data) }],
       };
+    },
+    {
+      prompt:
+        "This tool sets user demographics. Provide all required fields (userkey, weight, height_ft, height_in, zip, sex, race, birthdate, inputs) as specified.",
     }
   );
 }
