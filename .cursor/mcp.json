@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "Node.js MCP Server": {
+      "command": "npm",
+      "args": ["start"],
+      "stdio": true,
+      "name": "Local MCP Server"
+    }
+  }
+}
